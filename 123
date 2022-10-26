@@ -1,0 +1,44 @@
+.papper
+  .information
+    .person1
+      //- img.person1(scr="",alt="")
+      h2.name 羅仁甫
+      span Luo-Ren-Fu
+    .person2
+      h3.person 個人資訊
+        hr
+        h4 國籍   台灣
+        h4 出生   1999-03-26
+        h4 學籍   中原大學
+        h4 系所   商業設計系
+      h3 聯絡方式
+        hr
+        h4 E-mail 
+        h4  ralph10330@gmail.com
+        h4 電話
+        h4 0921457678
+      h3 語言能力
+        hr
+        h4 中文 精通
+        h4 英文 熟悉
+        h4 日文 入門
+  .autobiography
+    .text1
+      h2 ABOUT ME
+        hr
+        p 中原大學商業設計系畢業，目前正在全聯打工中。
+    .text2
+      h3 技能
+        hr
+        h4 ai
+        h4 ps
+        h4 ae
+        h4 css,html
+    .text3
+      h3 經歷
+        hr
+        h4 2021 中原大學畢業
+        h4 2022 全聯打工中
+    .text4
+      h3 456
+        hr
