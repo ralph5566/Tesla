@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../setting.sass","../variables.sass"],"names":[],"mappings":"AAEA,mBACI,sBAEJ,KACI,SACA,YCPQ,uBDSZ,SACI,SACA,iBAEJ,GACI,SACA,UACA,gBAEJ,EACI,qBAEJ,IACI,eACA,YAEJ,EACI,UCxBe","file":"setting.css"}
+{"version":3,"sourceRoot":"","sources":["../variables.sass","../setting.sass"],"names":[],"mappings":"AAcA,MACI,2BACJ,qCACI,MACI,4BChBR,mBACI,sBAEJ,KACI,SACA,YDPQ,uBCSZ,SACI,SACA,iBAEJ,GACI,SACA,UACA,gBAEJ,EACI,qBAEJ,IACI,eACA,YAEJ,EACI","file":"setting.css"}

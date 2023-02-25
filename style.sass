@@ -16,7 +16,7 @@ header
     justify-content: space-between
     align-items: center
     height: $header-height
-    font-size: $normal-font-size
+    font-size: var(--normal-font-size)
     font-weight: $font-medium
 
     &_logo
@@ -29,6 +29,14 @@ header
     &_toggle
         display: flex
 
+    &_link
+        color: $first-color
+
+    &_button
+        background-color: rgba(0,0,0,.1)
+        border-radius: $radius
+        padding: 0.3rem 1rem
+
 @media screen and (min-width:1200px)
     .nav
         &_menu
@@ -39,5 +47,3 @@ header
             display: flex
         &_toggle
             display: none
-        &_link
-            color: $first-color
