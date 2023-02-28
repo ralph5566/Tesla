@@ -20,8 +20,10 @@ header
     font-weight: $font-medium
 
     &_logo
+        display: flex
+        align-items: center
         & img
-            width: 120px
+            width: 100px
 
     &_menu
         display: none
@@ -47,3 +49,61 @@ header
             display: flex
         &_toggle
             display: none
+
+main
+    width: 100%
+
+#model_s
+    background-image: url($model_s)
+    background-size: cover
+    background-position: center
+
+#model_y
+    background-image: url($model_y)
+    background-size: cover
+    background-position: center
+
+#model_3
+    background-image: url($model_3)
+    background-size: cover
+    background-position: center
+
+#model_x
+    background-image: url($model_x)
+    background-size: cover
+    background-position: center
+
+#solar_panels
+    background-image: url($solar_panels)
+    background-size: cover
+    background-position: center
+
+#solar_roof
+    background-image: url($solar_roof)
+    background-size: cover
+    background-position: center
+
+.home
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    height: 100vh
+    .car_model
+        position: fixed
+        top: calc(10vh + #{$header-height})
+
+        &_title
+            font-size: var(--h2-font-size)
+            font-weight: $font-medium
+            text-align: center
+            line-height: 80%
+
+        &_paragraph
+            font-size: var(--normal-font-size)
+            letter-spacing: 0.07rem
+            text-underline-offset: 4px
+
+        &_link
+            color: $first-color
+            text-decoration: underline
