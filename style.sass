@@ -107,3 +107,44 @@ main
         &_link
             color: $first-color
             text-decoration: underline
+
+    &_button
+        display: flex
+        flex-direction: column
+        font-size: var(--normal-font-size)
+        font-weight: $font-medium
+
+        position: fixed
+        bottom: 10vh
+
+        row-gap: 1rem
+
+        @media screen and (min-width:600px)
+            flex-direction: row
+            column-gap: 1.5rem
+
+        &_order
+            width: 90vw
+            height: 2.5rem
+
+            background-color: $second-color
+            border-radius: .2rem
+
+            display: flex
+            justify-content: center
+            align-items: center
+            letter-spacing: .05rem
+
+            & a
+                color: #fff
+
+            @media screen and (min-width:600px)
+                width: 12.5rem
+            @media screen and (min-width:840px)
+                width: 16.5rem
+        &_exist
+            @extend .home_button_order
+            background-color: $thrid-color
+
+            & a
+                color: #000
