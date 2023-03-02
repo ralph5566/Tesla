@@ -51,7 +51,10 @@ header
             display: none
 
 main
-    width: 100%
+    height: 100vh
+
+    overflow-y: scroll
+    scroll-snap-type: y mandatory
 
 #model_s
     background-image: url($model_s)
@@ -87,6 +90,9 @@ main
     display: flex
     flex-direction: column
     align-items: center
+
+    scroll-snap-align: start
+    scroll-snap-stop: normal
 
     height: 100vh
     .car_model
