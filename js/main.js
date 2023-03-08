@@ -30,7 +30,7 @@ function creatObserver(ele) {
     observer.observe(ele);
   });
 }
-
+// 判斷當前位置
 function handleIntersect(entries, observer) {
   // console.log(entries);
   entries.forEach((entry) => {
@@ -77,12 +77,36 @@ function handleIntersect(entries, observer) {
           break;
       }
 
+      // 更新內容
       title.innerHTML = page.title;
       paragraph.childNodes[0].textContent = page.paragraph;
       link.childNodes[0].textContent = page.link;
       // console.log(left_btn.childNodes);
       left_btn.childNodes[0].textContent = page.left_btn;
       right_btn.childNodes[0].textContent = page.right_btn;
+
+      // title.classList.add("invisible");
     }
   });
 }
+// 監視滑動
+const main = document.getElementsByTagName("main")[0];
+
+main.addEventListener("scroll", (e) => {
+  // console.log(main.scrollTop);
+  let viewHeight = e.currentTarget.offsetHeight;
+  let currentOffset = e.currentTarget.scrollTop % viewHeight;
+  let opacityValue = Math.abs(1 - currentOffset / (viewHeight / 2));
+
+  // console.log(e.currentTarget.offsetHeight);
+  // console.log(e.currentTarget.scrollTop);
+  // console.log(viewHeight);
+  // console.log(currentOffset);
+  // console.log(opacityValue);
+
+  title.style.opacity = opacityValue;
+  paragraph.style.opacity = opacityValue;
+  link.style.opacity = opacityValue;
+  left_btn.style.opacity = opacityValue;
+  right_btn.style.opacity = opacityValue;
+});
